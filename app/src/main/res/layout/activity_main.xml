@@ -19,7 +19,7 @@
         ></EditText>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
         android:textSize="40dp"
         android:text="0"
         android:background="@color/white"
@@ -32,6 +32,34 @@
         android:layout_margin="25sp"
         android:columnCount="4"
         android:rowCount="5">
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:backgroundTint="#FF0000"
+            android:padding="25sp"
+            android:text="C"
+            android:textSize="16sp"></Button>
+
+        <ImageButton
+            android:id="@+id/btnCut"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:backgroundTint="@android:color/black"
+            app:srcCompat= "@drawable/imagebutton"
+            android:padding="25sp"
+            android:text="C"
+            android:textSize="16sp"></ImageButton>
+
+        <Button
+            android:id="@+id/btnPercentage"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:backgroundTint="#ADD136"
+            android:padding="25sp"
+            android:text="%"
+            android:textSize="16sp"></Button>
+
 
         <Button
             android:id="@+id/btn1"
@@ -127,7 +155,7 @@
             android:id="@+id/btnMul"
             android:layout_row="1"
             android:layout_column="3"
-            android:backgroundTint="#ADD8E6"
+            android:backgroundTint="#0000bB"
             android:padding="25sp"
             android:layout_margin="1sp"
             android:text="X"
@@ -137,17 +165,17 @@
             android:id="@+id/btnDiv"
             android:layout_row="2"
             android:layout_column="3"
-            android:backgroundTint="#ADD8E6"
+            android:backgroundTint="#0000bB"
             android:padding="25sp"
             android:layout_margin="1sp"
-            android:text="%"
+            android:text="/"
             android:textSize="16sp"></Button>
 
         <Button
             android:id="@+id/btnSub"
             android:layout_row="3"
             android:layout_column="3"
-            android:backgroundTint="#ADD8E6"
+            android:backgroundTint="#0000BB"
             android:padding="25sp"
             android:layout_margin="1sp"
             android:text="-"
@@ -157,7 +185,7 @@
             android:id="@+id/btnAdd"
             android:layout_row="0"
             android:layout_column="3"
-            android:backgroundTint="#ADD8E6"
+            android:backgroundTint="#0000bB"
             android:padding="25sp"
             android:layout_margin="1sp"
             android:text="+"
@@ -184,9 +212,18 @@
 
         <Button
             android:id="@+id/btnParanthesis"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:backgroundTint="#Add000"
+            android:padding="25sp"
+            android:text="()"
+            android:textSize="16sp"></Button>
+
+        <Button
+            android:id="@+id/btnequal"
             android:layout_row="3"
             android:layout_column="2"
-            android:backgroundTint="#701"
+            android:backgroundTint="#ADD000"
             android:padding="25sp"
             android:text="="
             android:textSize="16sp"></Button>
